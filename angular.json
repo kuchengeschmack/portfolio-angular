@@ -6,26 +6,26 @@
     "front": {
       "projectType": "application",
       "schematics": {},
-      "root": "apps/front",
-      "sourceRoot": "apps/front/src",
+      "root": "front",
+      "sourceRoot": "front/src",
       "prefix": "app",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
             "outputPath": "dist/front",
-            "index": "apps/front/src/index.html",
-            "browser": "apps/front/src/main.ts",
+            "index": "front/src/index.html",
+            "browser": "front/src/main.ts",
             "polyfills": ["zone.js"],
-            "tsConfig": "apps/front/tsconfig.app.json",
+            "tsConfig": "front/tsconfig.app.json",
             "assets": [
               {
                 "glob": "**/*",
-                "input": "apps/front/public",
+                "input": "front/public",
                 "output": "/public/"
               }
             ],
-            "styles": ["apps/front/src/styles.scss"],
+            "styles": ["front/src/styles.scss"],
             "scripts": []
           },
           "configurations": {
