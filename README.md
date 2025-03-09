@@ -8,7 +8,7 @@ Art portfolio for artist Marie-Cécile Caron.
 
 ## How-to 🤔
 
-### Install
+### Install and serve
 
 You must have [Git](https://git-scm.com/), [Node.js](https://nodejs.org/en) and [PnPM](https://pnpm.io/) installed on your PC.
 
@@ -21,29 +21,8 @@ git clone https://github.com/Kuchengeschmack/artiste-peintre.git
 cd artiste-peintre
 # Install dependencies
 pnpm install
-```
-
-### Serve the app
-
-#### Locally
-
-```sh
-# Launches a local Node server at http://localhost:4200
+# Build and serve on http://localhost:4200
 pnpm start
-```
-
-#### Over the local network
-
-```sh
-# Launches a Node server over the local area network at http://192.168.X.Y:4200 where 192.168.X.Y is your local IP address
-pnpm start --host 192.168.X.Y
-```
-
-### Build the app
-
-```sh
-# Builds the app in the ./dist folder
-pnpm build
 ```
 
 ## Workflow 🤓
