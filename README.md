@@ -27,30 +27,7 @@ pnpm start
 
 ## Workflow 🤓
 
-[Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) are to be used in this project.
-
-Branches are created from the `main` branch :
-
-```sh
-git switch main
-git switch --create <my-branch>
-```
-
-Branches are then merged into `main` without fast-forward :
-
-```sh
-git switch main
-git merge --no-ff <my-branch>
-git branch --delete <my-branch>
-```
-
-When ready, create a release using :
-
-```sh
-pnpm release
-```
-
-Then follow the prompt. Project's `package.json` and `CHANGELOG.md` files shall be updated automatically and committed on the fly. The corresponding commit shall be automatically tagged with version number.
+[Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) are used.
 
 ## Feedback 🔂
 
