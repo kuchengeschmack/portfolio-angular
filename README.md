@@ -16,7 +16,7 @@ Open a shell terminal in your dev folder and type :
 
 ```sh
 # Clone the project
-git clone https://github.com/Kuchengeschmack/artiste-peintre.git
+git clone https://github.com/kuchengeschmack/artiste-peintre.git
 # Go to project folder
 cd artiste-peintre
 # Install dependencies
