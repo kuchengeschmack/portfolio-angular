@@ -8,7 +8,7 @@ import { Component, Input } from '@angular/core';
         <h1>{{ photo.alt }}</h1>
       </div>
       <div class="photo-card-img">
-        <img [src]="photo.src" [alt]="photo.alt" />
+        <img [src]="photo.src" [alt]="photo.alt" loading="lazy" />
       </div>
     </div>
   `,

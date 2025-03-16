@@ -1,18 +1,18 @@
 import type { OnInit } from '@angular/core';
-import { DOCUMENT } from '@angular/common';
-import { Component, Inject } from '@angular/core';
+import { CommonModule, DOCUMENT } from '@angular/common';
+import { Component, inject } from '@angular/core';
 
-import photos from '../../../public/images.json';
 import { PhotoCard } from './photo-card';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'art-gallery',
-  imports: [PhotoCard],
+  imports: [PhotoCard, CommonModule],
   template: `
     <article class="article">
       <h1>Book</h1>
       <div class="gallery">
-        @for (photo of gallery.photos; track photo.alt) {
+        @for (photo of gallery | async; track photo.alt) {
           <art-photo-card [photo]="photo"></art-photo-card>
         }
       </div>
@@ -33,10 +33,9 @@ import { PhotoCard } from './photo-card';
   `,
 })
 export class Gallery implements OnInit {
-  protected readonly gallery = { photos };
+  private readonly _document = inject(DOCUMENT);
+  protected readonly gallery = inject(HttpClient).get<Photo[]>('http://localhost:4200/images.json');
   protected breakpoint = 3;
-
-  constructor(@Inject(DOCUMENT) private _document: Document) {}
 
   ngOnInit() {
     this._size();
