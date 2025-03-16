@@ -22,7 +22,7 @@
               {
                 "glob": "**/*",
                 "input": "front/public",
-                "output": "/public/"
+                "output": ""
               }
             ],
             "styles": ["front/src/styles.scss"],
