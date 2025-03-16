@@ -1,5 +1,5 @@
 import type { OnInit } from '@angular/core';
-import { CommonModule, DOCUMENT } from '@angular/common';
+import { AsyncPipe, DOCUMENT } from '@angular/common';
 import { Component, inject } from '@angular/core';
 
 import { PhotoCard } from './photo-card';
@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'art-gallery',
-  imports: [PhotoCard, CommonModule],
+  imports: [PhotoCard, AsyncPipe],
   template: `
     <article class="article">
       <h1>Book</h1>
