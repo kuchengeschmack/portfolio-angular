@@ -2,10 +2,9 @@
   "name": "artiste-peintre",
   "version": "0.19.0",
   "private": true,
-  "author": "Dorian Réale Caron <drealecaron@protonmail.com>",
+  "author": "Dorian Réale Caron <d.reale.caron@protonmail.com>",
   "license": "MIT",
   "repository": "git@github.com:kuchengeschmack/artiste-peintre.git",
-  "packageManager": "pnpm@10.6.1",
   "scripts": {
     "start": "ng serve",
     "build": "ng build",
@@ -27,7 +26,7 @@
     "zone.js": "^0.15.0"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^19.2.3",
+    "@angular-devkit/build-angular": "^19.2.2",
     "@angular/cli": "^19.2.3",
     "@eslint/js": "^9.22.0",
     "@swc-node/register": "^1.10.10",
@@ -37,17 +36,7 @@
     "husky": "^9.1.7",
     "lint-staged": "^15.5.0",
     "prettier": "^3.5.3",
-    "typescript": "^5.7.3",
+    "typescript": "5.8",
     "typescript-eslint": "^8.26.1"
-  },
-  "pnpm": {
-    "overrides": {
-      "esbuild@<=0.24.2": ">=0.25.0",
-      "typescript@>=5.8": "<5.8"
-    },
-    "onlyBuiltDependencies": [
-      "esbuild",
-      "lmdb"
-    ]
   }
 }
