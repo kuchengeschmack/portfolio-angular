@@ -19,11 +19,6 @@ jobs:
         with:
           node-version: 22.12.0
 
-      - name: Setup npm
-        uses: npm/action-setup@v4
-        with:
-          version: 9.2.0
-
       - name: Build Project
         run: |
           npm install
