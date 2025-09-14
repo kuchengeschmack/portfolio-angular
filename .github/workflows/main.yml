@@ -21,7 +21,8 @@ jobs:
 
       - name: Setup npm
         uses: npm/action-setup@v4
-        version: 9.2.0
+        with:
+          - version: 9.2.0
 
       - name: Build Project
         run: |
