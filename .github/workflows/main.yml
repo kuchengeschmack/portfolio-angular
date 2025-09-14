@@ -19,10 +19,11 @@ jobs:
         with:
           node-version: 22.12.0
 
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v4
+      - name: Setup npm
+        uses: npm/action-setup@v4
+        version: 9.2.0
 
       - name: Build Project
         run: |
-          pnpm install
-          pnpm build
+          npm install
+          npm build
