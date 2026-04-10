@@ -1,6 +1,6 @@
 import type { OnInit } from '@angular/core';
-import { AsyncPipe, DOCUMENT } from '@angular/common';
-import { Component, inject } from '@angular/core';
+import { AsyncPipe } from '@angular/common';
+import { Component, inject, DOCUMENT } from '@angular/core';
 
 import { PhotoCard } from './photo-card';
 import { HttpClient } from '@angular/common/http';
