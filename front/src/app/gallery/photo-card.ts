@@ -1,14 +1,24 @@
 import { Component, Input } from '@angular/core';
 
+import { NgOptimizedImage } from '@angular/common';
+
 @Component({
   selector: 'art-photo-card',
+  standalone: true,
+  imports: [NgOptimizedImage],
   template: `
     <div class="photo-card">
       <div class="photo-card-header">
         <h1>{{ photo.alt }}</h1>
       </div>
       <div class="photo-card-img">
-        <img [src]="photo.src" [alt]="photo.alt" loading="lazy" />
+        <img
+          [priority]="photo.src.includes('51degre')"
+          [ngSrc]="photo.src"
+          [alt]="photo.alt"
+          width="400"
+          height="400"
+        />
       </div>
     </div>
   `,
