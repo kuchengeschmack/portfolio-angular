@@ -1,6 +1,6 @@
 {
   "extends": "./tsconfig.json",
   "include": ["src/**/*.ts"],
-  "compilerOptions": {},
+  "compilerOptions": { "module": "nodenext" },
   "exclude": ["jest.config.ts", "src/**/*.test.ts", "src/**/*.spec.ts"]
 }
