@@ -4,7 +4,6 @@
     "target": "ES2022",
     "lib": ["ES2022", "dom"],
     "experimentalDecorators": true,
-    "baseUrl": "./src",
     "module": "esnext",
     "moduleResolution": "bundler",
     "declaration": false,

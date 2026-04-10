@@ -1,6 +1,6 @@
 {
   "extends": "./tsconfig.json",
   "include": ["src/**/*.ts"],
-  "compilerOptions": { "module": "nodenext" },
+  "compilerOptions": { "module": "esnext", "moduleResolution": "bundler" },
   "exclude": ["jest.config.ts", "src/**/*.test.ts", "src/**/*.spec.ts"]
 }
