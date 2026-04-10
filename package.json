@@ -1,6 +1,6 @@
 {
   "name": "artiste-peintre",
-  "version": "0.19.0",
+  "version": "0.19.1",
   "private": true,
   "author": "Dorian Réale Caron <d.reale.caron@protonmail.com>",
   "license": "MIT",
@@ -32,6 +32,7 @@
     "@swc-node/register": "^1.10.10",
     "@types/express": "^5.0.0",
     "@types/node": "^22.13.10",
+    "baseline-browser-mapping": "^2.10.17",
     "eslint": "^9.22.0",
     "husky": "^9.1.7",
     "lint-staged": "^15.5.0",
