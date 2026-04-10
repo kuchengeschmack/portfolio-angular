@@ -1,12 +1,12 @@
 import { AsyncPipe } from '@angular/common';
-import type { OnInit } from '@angular/core';
-import { Component, DOCUMENT, inject } from '@angular/core';
+import { Component, DOCUMENT, inject, OnInit } from '@angular/core';
 
 import { HttpClient } from '@angular/common/http';
 import { PhotoCard } from './photo-card.js';
 
 @Component({
   selector: 'art-gallery',
+  standalone: true,
   imports: [PhotoCard, AsyncPipe],
   template: `
     <article class="article">
